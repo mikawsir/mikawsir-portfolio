@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- CHARACTER ENCODING: Ensures proper text rendering -->
     <meta charset="UTF-8">
+    <!-- VIEWPORT META TAG: CRITICAL FOR RESPONSIVE DESIGN - Makes the page scale correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Page description for search engines and accessibility -->
+    <meta name="description" content="Mikawsir - Frontend Developer & UI/UX Designer portfolio with 2 years of experience">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,8 +18,8 @@
 </head>
 
 <body class="font-open-sans">
-    <header>
-        <nav>
+    <header >
+        <nav class="container">
             <div class="logo">
                 <h2>ma<span class="color-orange">r</span>y</h2>
             </div>
@@ -32,18 +36,20 @@
                 <p>Frontend Developer & UI/UX Designer based in Bangladesh
                     with 2 years of experience crafting beautiful and functional websites.
                 </p>
-                <div>
-                    <button type="button" class="btn">Download CV</button>
+                <!-- BUTTON CONTAINER: Added wrapper div for better responsive button layout -->
+                <div class="button-group">
+                    <button type="button" class="btn">Download CV <img src="" alt=""></button>
                     <button type="button" class="btn btn-secondary">My Portfolio</button>
                 </div>
             </div>
             <div class="banner-image">
-                <img src="images/hardy.png" alt=" ">
+                <!-- ALT TEXT: Provides description for screen readers and SEO - improves accessibility -->
+                <img src="images/hardy.png" alt="Mikawsir - Frontend Developer Portrait">
             </div>
         </section>
     </header>
     <section id="about">
-        <div class="about-container">
+        <div class="about-container container">
             <div class="section-heading">
                 <h2>About Me</h2>
                 <p>I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick
@@ -72,45 +78,139 @@
         </div>
     </section>
     <section id="skills">
-        <div class="skill-container">
+        <div class="skill-container container">
             <div class="section-heading">
                 <h2>what I do</h2>
                 <p>I have more than 10 years experience building software for clients all over the world. Below is a
                     quick overview of my main technical skill sets and technologies i use. Want to find out more about
                     my experience? Check out my online resume and project portfolio.</p>
             </div>
-        <div class="skills-card-container">
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/js.png" alt="javascript">
-                    <h3>Vanilla JavaScript</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            <div class="skills-card-container">
+                <div class="skill-box">
+                    <div class="skill-card">
+                        <!-- ALT TEXT: Descriptive alt text for better accessibility and SEO -->
+                        <img src="images/icons/js.png" alt="Vanilla JavaScript icon">
+                        <h3>Vanilla JavaScript</h3>
+                        <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                            free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-card">
+                        <!-- ALT TEXT: Corrected alt text to match the actual icon -->
+                        <img src="images/icons/react.png" alt="React icon">
+                        <h3>React</h3>
+                        <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                            free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-card">
+                        <!-- ALT TEXT: Corrected alt text to match the actual icon -->
+                        <img src="images/icons/nodejs.png" alt="Node.js icon">
+                        <h3>Node.js</h3>
+                        <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                            free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-card">
+                        <!-- ALT TEXT: Corrected alt text to match the actual icon -->
+                        <img src="images/icons/mongo.png" alt="MongoDB icon">
+                        <h3>MongoDB</h3>
+                        <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                            free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
                 </div>
             </div>
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/react.png" alt="javascript">
-                    <h3>React</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/nodejs.png" alt="javascript">
-                    <h3>Node.js</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/mongo.png" alt="javascript">
-                    <h3>MongoDB</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-            </div>
-         </div>
         </div>
     </section>
-</body>
 
+    <section class="resume">
+        <div class="section-heading">
+            <h2>My Resume</h2>
+        </div>
+        <div class="resume-container">
+            <div class="education">
+                <h2 class="section-title">My Education</h2>
+                <div class="resume-card">
+                    <h3 class="crad-title">Master in Computer Engineering</h3>
+                    <p class="card-info">Harvard University / 2015 - 2017</p>
+                    <p class="card-text">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <hr>
+                <div class="resume-card">
+                    <h3 class="crad-title">Master in Computer Engineering</h3>
+                    <p class="card-info">Harvard University / 2015 - 2017</p>
+                    <p class="card-text">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <hr>
+                <div class="resume-card">
+                    <h3 class="crad-title">Master in Computer Engineering</h3>
+                    <p class="card-info">Harvard University / 2015 - 2017</p>
+                    <p class="card-text">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="experience">
+                <h2 class="section-title">My Experience</h2>
+                <div class="resume-card">
+                    <h3 class="crad-title">Master in Computer Engineering</h3>
+                    <p class="card-info">Harvard University / 2015 - 2017</p>
+                    <p class="card-text">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <hr>
+                <div class="resume-card">
+                    <h3 class="crad-title">Master in Computer Engineering</h3>
+                    <p class="card-info">Harvard University / 2015 - 2017</p>
+                    <p class="card-text">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <hr>
+                <div class="resume-card">
+                    <h3 class="crad-title">Master in Computer Engineering</h3>
+                    <p class="card-info">Harvard University / 2015 - 2017</p>
+                    <p class="card-text">List skill/technologies here. You can change the icon above
+                        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="text-center"> <button class="btn">Download CV</button></div>
+    </section>
+
+    <footer>
+        <section class="footer-container container">
+            <div class="social">
+                <h2>lets connect</h2>
+                <p>
+                    Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M
+                    ET, Monday through Friday.
+                </p>
+                <div class="icons">
+                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+                    <a href=""><img src="images/icons/twitter.png" alt=""></a>
+                    <a href=""><img src="images/icons/insta.png" alt=""></a>
+                </div>
+            </div>
+            <form action="" class="form">
+                <h2>  let's massage me </h2>
+                <div>
+                    <input type="text" name="" id="" placeholder="Your name">
+                </div>
+                <div>
+                    <input type="text" name="" id="" placeholder="Your email">
+                </div>
+                <div class="">
+                    <textarea name="" id="" rows="10" placeholder="Massag"></textarea>
+                </div>
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </section>
+    </footer>
+</body>
 </html>
